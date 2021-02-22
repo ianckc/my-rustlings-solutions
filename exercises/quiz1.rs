@@ -11,12 +11,7 @@
 
 // Put your function here!
 fn calculate_apple_price(amount: i32) -> i32 {
-    let mut price: i32 = 2;
-
-    if amount > 40 {
-        price = 1;
-    }
-
+    let price: i32 = if amount > 40 {1} else {2};
     price * amount
 }
 
